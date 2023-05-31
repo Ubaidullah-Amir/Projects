@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/28c2b17fc9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="user_profile.css">
+    
+    <title>user profile </title>
+</head>
+<body>
+    <nav class="navbar">
+        <!-- brand name and div having links are flex items -->
+
+        
+
+        <div class="brand-title">Brand Name</div>
+
+        <div class="navbar-links">
+            <ul>
+                <li class="link_active"><a href="../user profile/user_profile.html" >Profile</a></li>
+                <li ><a href="../main grid/index.html" >Books</a></li>
+                <li><a href="../cart/cart.html">Cart</a></li>
+                <li ><a href="../borrowed_books/borr_books.html" >Borrowed Books</a></li>
+                <li><a href="#" onclick="logout()">logout</a></li>
+                
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="leftbox">
+            <nav class="nav">
+                <a  onclick="tabs(0)" class="tab active">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+                <a  onclick="tabs(1)" class="tab">
+                    <i class="fa-solid fa-gear"></i>
+                </a>
+            </nav>
+        </div>
+        <div class="rightbox">
+            <div class="profile tabShow">
+            <form id="myform">
+                <h1>Personal Info</h1>
+                <h2>First Name</h2>
+                <input id="inp_first_name" name="first_name" type="text" value="..." class="input">
+                <h2>Last Name</h2>
+                <input id="inp_last_name" name="last_name" type="text" value="....." class="input">
+                <h2>Email</h2>
+                <input id="inp_email" name="email"  type="text" value="....." class="input">
+                <h2>Password</h2>
+                <input id="inp_password" name="password" type="password" value="....." class="input">
+                <a href="#" id="hide_pass" onclick="hide_password()" style="display:none">h</a>
+                <a href="#" id="show_pass" onclick="show_password()" >s</a>
+                <h2>Phone Number</h2>
+                <input id="inp_phone_number" name="phone_number" type="text" value="....." class="input">
+                <h2>Address</h2>
+                <input id="inp_address" name="address" type="text" value="....." class="input">
+                <select name="city_id" id="inp_city">
+                </select>
+                <select name="state_id" id="inp_state">
+                </select>
+
+                <button type="submit" class="btn">Update</button>
+            </form>
+            </div>
+            <div class="additional_info tabShow">
+                <h1>Additional Info</h1>
+                
+                <h2>Membership Expiry Date</h2>
+                <p id="mem_expiry">membership expiry</p>
+
+                
+                
+            </div>
+
+        </div>
+
+    </div>
+    <script src="user_profile.js"></script>
+</body>
+</html>

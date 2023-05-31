@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>login</title>
+    <link rel="stylesheet" href="login.css">
+  </head>
+  <body>
+    <div class="main">
+      <a id="switch_admin" href="#"   class="switch">switch to admin</a>
+      <a id="switch_user" href="#"   class="switch">switch to user</a>
+      <div class="center">
+        <h1>Login</h1>
+        <form id="myform">
+          <div class="txt_field">
+            <input name="inp_email" id="inp_email" type="text" required>
+            <span></span>
+            <label for="inp_email">Email</label>
+          </div>
+          <div class="txt_field">
+            <input type="text" name="inp_password" id="inp_password" required>
+            <span></span>
+            <label for="inp_password">Password</label>
+          </div>
+          <div class="txt_field">
+            <input type="text" name="inp_confirm_password" id="inp_confirm_password" required>
+            <span></span>
+            <label for="inp_confirm_password">Confirm Password</label>
+          </div>
+          <div class="pass">Forgot Password?</div>
+          <button id="btn_login" type="submit">login</button>
+          
+        </form>
+        <div class="signup_link">
+          Not a member? <a href="#">Signup</a>
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+  <script src="login.js">
+    
+    // const myform=document.getElementById("myform");
+    // myform.addEventListener('submit',function(e){
+    //   e.preventDefault();
+    //   //key value pair of form data like {{inp_username:{inp_username:value}},{...},..}
+    //   const form_data=new FormData(this);
+      
+    //   fetch('index.php',{
+    //   method:'post',
+    //   body : form_data
+    //   }).then(function(response){
+    //     return response.text();
+    //   }).then(function(text){
+    //     console.log(text);
+    //   }).catch(function(error){
+    //     console.log(error);
+    //     })
+    // })
+
+  </script>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="signup.css">
+  </head>
+  <body>
+    <div class="center">
+      <h1>Sign-up</h1>
+
+      <!-- form tag -->
+      <form id="myform">
+        <!-- first name -->
+        <div class="txt_field">
+          <input id="inp_first_name" name="first_name" type="text" required>
+          <span></span>
+          <label for="inp_first_name">First Name</label>
+        </div>
+
+        <!-- last name -->
+        <div class="txt_field">
+          <input id="inp_last_name" name="last_name" type="text" required>
+          <span></span>
+          <label for="inp_last_name">Last Name</label>
+        </div>
+        <!-- Email -->
+        <div class="txt_field">
+          <input id="inp_email" name="email" type="text" required>
+          <span></span>
+          <label for="inp_email">Email</label>
+        </div>
+        <!-- Gender -->
+        <div class=" gender_radio">
+          <label for="gender">Gender</label>
+          <input type="radio" id="male" name="gender" value="male" checked>
+          <label for="gender">Male</label>
+          <input type="radio" id="female" name="gender" value="female" >
+          <label for="female">Female</label>
+          <input type="radio" id="other" name="gender" value="other" >
+          <label for="other">Others</label>
+          
+          <span></span>
+          
+        </div>
+
+        <!-- address -->
+        <div class="txt_field">
+          <input id="inp_address" name="address" type="text" required>
+          <span></span>
+          <label for="inp_address">Address</label>
+        </div>
+        <select name="city_id" id="inp_city">
+
+        </select>
+        <select name="state_id" id="inp_state">
+          
+        </select>
+
+        <!-- age -->
+        <div class="txt_field">
+          <input id="inp_age" name="phone_number" type="text" required>
+          <span></span>
+          <label for="inp_age">Phone number</label>
+        </div>
+
+
+        <!-- password -->
+        <div class="txt_field">
+          <input id="inp_password" name="password" type="password" required>
+          <span></span>
+          <label for="inp_password">Password</label>
+        </div>
+
+        <!-- confirm password -->
+        <div class="txt_field">
+          <input id="inp_confirm_password" name="inp_confirm_password" type="password" required>
+          <span></span>
+          <label for="inp_confirm_password">Confirm Password</label>
+        </div>
+        
+        <!-- signup button -->
+        <button id="btn_signup" type="submit">Sign-up</button>
+        
+      </form>
+      <div class="signup_link">
+        already a member? <a href="../login_form/login.html">Login</a>
+      </div>
+    </div>
+
+    <script src="signup.js">
+      
+
+    </script>
+
+  </body>
+</html>

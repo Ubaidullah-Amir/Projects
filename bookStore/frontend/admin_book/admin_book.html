@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add book</title>
+    <link rel="stylesheet" href="admin_book.css">
+    
+</head>
+<body>
+    <div class="container">
+
+        <nav class="navbar">
+            <!-- brand name and div having links are flex items -->
+            <div class="brand-title">Admin page</div>
+            <div class="navbar-links">
+                <ul>
+                    <li class="active"><a href="../admin_book/admin_book.html" >Add book</a></li>
+                    <li><a href="../admin_notification/admin_noti.html" >Notification</a></li>
+                    <li><a href="../admin_profile/admin_profile.html" >Profile</a></li>
+                    <li><a href="#" onclick="logout()" >Log out</a></li>
+                    
+                </ul>
+            </div>
+        </nav>
+        <div class="center">
+            <h1>Add a book</h1>
+
+            
+            <!-- form tag -->
+            <form id="myform" class="flex">
+                <!-- title -->
+                <div class="form_data">
+                    <div class="txt_field">
+                        <input id="inp_title" name="title" type="text" required>
+                        <span></span>
+                        <label for="inp_title">Title</label>
+                    </div>
+        
+                    <!-- author -->
+                    <div class="txt_field">
+                        <input id="inp_author" name="author" type="text" required>
+                        <span></span>
+                        <label for="inp_author">Author</label>
+                    </div>
+                    <!-- publisher -->
+                    <div class="genre txt_field">
+                        <label for="inp_publisher">Publisher</label>
+                        <select name="publisher_id" id="inp_publisher">
+                  
+                        </select>
+
+
+                    </div>
+                    <!-- Genre -->
+                    <div class="genre txt_field">
+                        <label for="inp_genre">Genre</label>
+                        <select name="genre_id" id="inp_genre">
+    
+                        </select>
+                        
+
+                    </div>
+                    
+                    <!-- Edition -->
+                    <div class="txt_field">
+                        <input id="inp_edition" name="edition" type="text" required>
+                        <span></span>
+                        <label for="inp_edition">Edition</label>
+                    </div>
+                    <!-- published date -->
+                    <div class="txt_field">
+                        <input id="inp_published_date" name="date_published" type="text" required>
+                        <span></span>
+                        <label for="inp_published_date">published_date</label>
+                    </div>
+                    <!-- borrow charges -->
+                    <div class="txt_field">
+                        <input id="inp_borrow_charges" name="borr_charges" type="text" required>
+                        <span></span>
+                        <label for="inp_borrow_charges">Borrow charges</label>
+                    </div>
+                    <!-- book price -->
+                    <div class="txt_field">
+                        <input id="inp_price" name="price" type="text" required>
+                        <span></span>
+                        <label for="inp_price">Price</label>
+                    </div>
+                    <!-- quatity -->
+                    <div class="txt_field">
+                        <input id="inp_quantity" name="quantity" type="text" required>
+                        <span></span>
+                        <label for="inp_quantity">Quantity</label>
+                    </div>
+                    <!-- description -->
+                    <div class="txt_field">
+                        <textarea id="inp_descrip" name="descp" type="text" required rows="3" cols="50"></textarea>
+                        <span></span>
+                        <label for="inp_descrip">descrip</label>
+                    </div>
+                    <button id="btn_addbook" type="submit">Proceed</button>
+
+                </div>
+                <!-- for image -->
+                <!-- no name to input img provided because inp should be appended to form data in js file -->
+                <div>
+                    <input type="file" id="inp_img" accept=".png,.jpg,.jpeg">
+                    <div class="img_display" id="img_display">
+
+                    </div>
+                </div>
+                    
+            </form>
+                
+            </div>
+             
+        </div>
+    </div>      
+              
+    <script src="admin_book.js"></script>
+
+</body>
+</html>

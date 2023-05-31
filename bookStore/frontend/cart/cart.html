@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cart.css">
+    <title>Cart</title>
+</head>
+<body>
+    <nav class="navbar">
+        <!-- brand name and div having links are flex items -->
+        <div class="brand-title">Brand Name</div>
+
+        <div class="navbar-links">
+            <ul>
+                <li><a href="../user profile/user_profile.html" >Profile</a></li>
+                <li ><a href="../main grid/index.html" >Books</a></li>
+                <li class="active"><a href="../cart/cart.html">Cart</a></li>
+                <li ><a href="../borrowed_books/borr_books.html" >Borrowed Books</a></li>
+                <li><a href="#" onclick="logout()">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main_container">
+        <h1>Ubaidullah Amir</h1>
+        <h2>Books added to cart</h2>
+        <div class="container">
+            <div class="flex_container" id="flex_container">
+            </div>
+        </div>
+
+        <h1 >Total Amount</h1>
+        <p id="total_amount"> None </p>
+        <button class="card_button proceed_btn" id="proceed">Proceed</button>
+
+    </div>
+    <script src="cart.js"></script>
+</body>
+</html>
